@@ -7,7 +7,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-    @vite('resources/css/app.css')
 
 </head>
