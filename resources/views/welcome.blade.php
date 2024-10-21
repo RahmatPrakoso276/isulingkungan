@@ -73,7 +73,7 @@
                     </button>
                 </div>
             </div>
-            <img class="w-full md:w-1/2 " src={{ asset('images/hero.svg') }} alt="">
+            <img class="w-full md:w-1/2 " src="{{ asset('images/hero.svg') }}" alt="">
         </div>
 
     </section>
