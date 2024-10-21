@@ -1,5 +1,11 @@
 {
     "version": 2,
+    "public": "public",
+    "rewrites": [
+
+        { "source": "/images/(.*)", "destination": "/public/$1" },
+        { "source": "/(.*)", "destination": "/index.php" }
+    ],
     "framework": null,
     "functions": {
         "api/index.php": { "runtime": "vercel-php@0.6.0" }
@@ -14,6 +20,7 @@
         "APP_ENV": "production",
         "APP_DEBUG": "true",
         "APP_URL": "https://yourprojectdomain.com",
+        "APP_KEY": "base64:K4Sw3pSTP4H2vivGAtgkB92WU5O6ddtceuB49c56sX8=",
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
