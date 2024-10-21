@@ -2,9 +2,8 @@
     "version": 2,
     "public": "public",
     "rewrites": [
-        { "source": "/js/(.*)", "destination": "/public/js/$1" },
-        { "source": "/css/(.*)", "destination": "/public/css/$1" },
-        { "source": "/images/(.*)", "destination": "/public/images/$1" },
+
+        { "source": "/images/(.*)", "destination": "/public/$1" },
         { "source": "/(.*)", "destination": "/index.php" }
     ]
     "framework": null,
