@@ -6,16 +6,6 @@
         { "source": "/images/(.*)", "destination": "/public/$1" },
         { "source": "/(.*)", "destination": "/index.php" }
     ],
-      "builds": [
-    {
-      "src": "public/index.php",
-      "use": "@vercel/php"
-    },
-    {
-      "src": "resources/**/*",
-      "use": "@vercel/static"
-    }
-  ],
     "framework": null,
     "functions": {
         "api/index.php": { "runtime": "vercel-php@0.6.0" }
@@ -26,11 +16,6 @@
             "dest": "/api/index.php"
         }
     ],
-    "scripts": {
-        "dev": "vite",
-        "build": "vite build",
-        "prod": "vite build --mode production"
-    }
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
